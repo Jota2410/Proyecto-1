@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+main {
+    width: 375px;
+    height: 930px;
+    margin: 0 auto 0
+}
+
+
+/*------parte de arriba--------*/
+
+.seccion-arriba {
+    height: 280px;
+}
+
+.seccion-arriba h1 {
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    color:  rgb(106, 211, 193);
+}
+
+.seccion-arriba h3 {
+    margin: 30px 30px 20px 30px;
+    color: hsl(71, 73%, 54%);
+}
+
+.seccion-arriba p {
+    margin: 20px 20px 20px 30px;
+    font-size: 16px;
+    color: lightgrey;
+    line-height: 30px;
+
+}
+
+
+
+/*--------parte de abajo izquierda------*/
+
+.seccion-izquierda {
+    background-color: rgb(106, 211, 193);
+    height: 280px;
+    color: white
+}
+
+.seccion-izquierda h3 {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.precio {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    height: 50px;
+}
+
+.digito {
+    font-size: 40px;
+}
+
+.modalidad {
+    color: lightgrey;
+    padding-top: 15px;
+}
+
+.acceso {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.boton {
+    text-align: center;
+}
+
+.boton a {
+    width: 315px;
+    height: 50px;
+    display: inline-block;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-top: 14px;
+    
+}
+
+/*-----parte de abajo derecha-----*/
+
+.seccion-derecha {
+    height: 280px;
+    background-color: rgb(97, 218, 255);
+    color: white;
+}
+
+.seccion-derecha h3{
+    margin: 0px 30px 20px 30px;
+    padding-top: 30px;
+}
+
+.parrafos p{
+line-height: 25px;
+margin-left: 30px;
+}
+
+@media only screen and (min-width: 750px){
+
+main{
+    width: 675px;
+    height: 560px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+/*-------seccion de arriba-------*/
+
+.seccion-arriba{
+    width: 675px;
+    height: 280px; 
+}
+
+.seccion-arriba h1{
+    padding-top: 60px;
+   
+}
+
+.seccion-arriba p{
+   font-size: 17px;
+   margin-right: 30px;
+}
+
+/*-------seccion de abajo--------*/
+
+.seccion-abajo{
+width: 675px;
+height: 280px;
+display:grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.seccion-izquierda h3{
+    padding-top: 0;
+}
+
+.boton a{
+    width: 275px;
+}
+
+.precio{
+    padding-bottom: 15px;
+}
+
+}
